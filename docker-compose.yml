@@ -10,7 +10,6 @@ services:
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
       - ~/docker/portainer:/data
-#      - /etc/letsencrypt/live/example.com:/certs:ro
       - /etc/letsencrypt/archive/example.com:/certs:ro
     command:
       - --ssl
